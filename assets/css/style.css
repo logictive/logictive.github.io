@@ -1,0 +1,205 @@
+body {
+	background: white url(../img/bg.svg) no-repeat top center;
+	background-size: 2100px 1200px;
+	text-align: center;
+}
+
+body, select, input, textarea {
+	color: #65656A;
+	font: 16px/1.5em museo-sans, sans-serif;
+	font-weight: 300;
+	width: 100%;
+}
+
+a {color: #03f;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;}
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style placeholders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+/* let's give blockquotes *some* default styling, because unstyled blockquotes are dangerous */
+blockquote {padding: 16px; background: #eee;}
+
+.element-invisible {
+  position: absolute !important;
+  height: 1px; width: 1px; 
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+h1 {
+	padding: 80px 0 50px 0;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 100;
+	padding: 0 0 50px;
+}
+	h2 .subtitle {
+		display: block;
+		font-size: 24px;
+		font-weight: 300;
+		padding: 20px 0 0;
+	}
+
+#contact-intro {
+	font-size: 24px;
+	font-weight: 300;
+	padding: 0 0 20px;
+	margin: 0 auto;
+	width: 620px;
+}
+
+form {
+	margin: 0 auto 50px;
+	text-align: left;
+	width: 500px;
+}
+	form div{ margin: 0 0 15px; position: relative; }
+	form p { color: #999899; padding: 0 0 10px; }
+
+input, select, textarea {
+	background: #E6E6E6;
+	border: none;
+	border-radius: 5px;
+	clear: both;
+	display: block;
+	font-size: 21px;
+	padding: 9px 10px 9px 50px;
+	transition: all 0.5s;
+}
+	 .icon {
+		color: #999899;
+		display: block;
+		font: 24px "SSStandard";
+		height: 24px;
+		left: 13px;
+		position: absolute;
+		transition: all 0.5s;
+		top: 13px;
+		width: 24px;
+	}
+
+	input:focus, select:focus, textarea:focus {
+		background: #f4f4f4;
+		outline: none;
+	}
+		input:focus + .icon, select:focus + .icon, textarea:focus + .icon {
+			color: #b3b1b3;
+			transition: all 0.5s;
+		}
+
+::-webkit-input-placeholder {
+   color: #999899;
+   transition: all 0.5s;
+}
+	:focus::-webkit-input-placeholder { color: #b3b1b3; }
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #999899;  
+   transition: all 0.5s;
+}
+	:focus:-moz-placeholder { color: #b3b1b3; }
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #999899;  
+   transition: all 0.5s;
+}
+	:focus::-moz-placeholder { color: #b3b1b3; }
+
+:-ms-input-placeholder {  
+   color: #999899;
+   transition: all 0.5s;
+}
+	:focus:-ms-input-placeholder { color: #b3b1b3; }
+
+	input[type=checkbox] {
+		display: none;
+	}
+
+	input[type=checkbox] + label {
+		color: #999899;
+		margin: 0 10px 0 0;
+	}
+
+	input[type=checkbox] + label::before {
+		content: '';
+		color: #999899;
+		background: #E6E6E6;
+		border-radius: 5px;
+		display: inline-block;
+		font: 24px "SSStandard";
+		height: 30px;
+		margin: -2px 6px 0 0;
+		padding: 3px;
+		vertical-align: middle;
+		width: 30px;
+	}
+		input[type=checkbox]:checked + label::before { content: ' check'; }
+
+	input[type=submit] {
+		background: #65656A;
+		color: #eee;
+		padding: 5px 10px;
+		text-transform: uppercase;
+		transition: all 0.3s;
+	}
+		input[type=submit]:hover, input[type=submit]:focus {
+			background: #4E4E52;
+			color: #fff;
+
+		}
+
+.error {
+	background: #FFE3E6;
+	color: #C32032;
+	display: none;
+	margin: 0 0 0 30px;
+	padding: 10px 20px;
+	font-weight: 500;
+	top: 0;
+}
+
+#thanks {
+	font-size: 18px;
+	padding: 0 0 100px;
+}
+
+footer {
+	color: #999899;
+}
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+	#contact-intro, form { width:; 100%; }
+}
+
+@media screen and (max-width: 480px) {
+
+
+}
+
+
+
+/* Print styles
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
