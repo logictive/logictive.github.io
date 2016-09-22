@@ -132,7 +132,8 @@ input, select, textarea {
 
 	input[type=checkbox] + label {
 		color: #999899;
-		margin: 0 10px 0 0;
+		display: inline-block;
+		margin: 5px 10px 5px 0;
 	}
 
 	input[type=checkbox] + label::before {
@@ -186,12 +187,14 @@ footer {
 -------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 768px) {
-	#contact-intro, form { width:; 100%; }
+	body { padding: 0 10%; }
+	#contact-intro, form { width: 100%; }
 }
 
 @media screen and (max-width: 480px) {
-
-
+	body {
+		background-size: 1575px 900px;
+	}
 }
 
 
