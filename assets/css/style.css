@@ -1,5 +1,5 @@
 body {
-	background: white url(../img/bg.svg) no-repeat top center;
+	background: white url(../img/bg.svg) repeat-y top center;
 	background-size: 2100px 1200px;
 	text-align: center;
 }
